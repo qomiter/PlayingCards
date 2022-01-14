@@ -21,7 +21,8 @@ public class RandomCard : MonoBehaviour
 
     void PickCard()
     {
-        Instantiate(card, transform.position, Quaternion.identity);
-        card.GetComponent<SpriteRenderer>().sprite = suit[Random.Range(0, suit.Length + 1)];
+        GameObject destroy = Instantiate(card, transform.position, Quaternion.identity);
+        card.GetComponent<SpriteRenderer>().sprite = suit[Random.Range(0, suit.Length)];
+        Destroy(destroy, 5f);
     }
 }
