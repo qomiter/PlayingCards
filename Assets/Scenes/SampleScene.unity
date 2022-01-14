@@ -118,9 +118,108 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &196174968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 196174970}
+  - component: {fileID: 196174969}
+  m_Layer: 0
+  m_Name: CardSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &196174969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196174968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fd205249e289f41b51fb565a33767f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  suit:
+  - {fileID: -4540277371661485700, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 6030796373493497537, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -1980152385704410187, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 3822176438060622607, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 427238581419618407, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 304510987370914945, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 6233830966454190193, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -9100254809898255631, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -7203852406266860937, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -7248901425784695154, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -1635846269909642089, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 2418581512444735887, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 4168678134019315893, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 6001533160705623265, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -8696775178428871759, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 584767101055106869, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -2664187891635634809, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 523671951056319493, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 8016462351423926090, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -693155327888381634, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -3902697446165001113, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -6326191308851428081, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 2422729037656088496, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 6587766724672292713, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -8007039692488986879, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -5077974413864737028, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 1163725406301296593, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 693737467777479285, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -3643242793741700817, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 712389772225884495, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -3783916857903281308, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -8901811038967280791, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -7422352253679343942, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -5532693094796569975, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 3423271176883002243, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 7810977657010685852, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -1447537356698556543, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 4636842750586419008, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 7517228829457388050, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 3410629784147295201, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -1148000757004120448, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -8057125631698619425, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 5652727281282172333, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -5753779266600291329, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 2906963844281690348, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -6636803463658228888, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 6223105683939963006, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 5358287119601127561, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -7786467446628818367, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 3675020525144087913, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: -1018504154583505901, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  - {fileID: 6552852310533076786, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  card: {fileID: 2259369865907003327, guid: 3f5696559991b81438229043f23121ce, type: 3}
+--- !u!4 &196174970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196174968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +256,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
