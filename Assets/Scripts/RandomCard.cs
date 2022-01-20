@@ -29,11 +29,11 @@ public class RandomCard : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if(cards.Count > 5)
+            if(cards.Count > 10)
             {
                 PickCard();
                 Debug.Log("Card Drawn");
-            }else if (cards.Count <= 5)
+            }else if (cards.Count <= 10)
             {
                 discardToDraw();
             }
