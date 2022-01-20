@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8809391018168022978}
   - component: {fileID: 4458018306653640228}
   m_Layer: 0
-  m_Name: playingCardsHD_0
+  m_Name: playingCardsHD_0 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4540277371661485700, guid: f77169cce9375d04595f657bdf893a78, type: 3}
+  m_Sprite: {fileID: 4168678134019315893, guid: f77169cce9375d04595f657bdf893a78, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
