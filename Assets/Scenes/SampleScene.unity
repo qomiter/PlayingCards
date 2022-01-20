@@ -152,6 +152,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fd205249e289f41b51fb565a33767f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroy:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  selected:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   cards:
   - {fileID: 2259369865907003327, guid: 3f5696559991b81438229043f23121ce, type: 3}
   - {fileID: 2259369865907003327, guid: c82d8c240e9c6e14bbdf96895e743f97, type: 3}
