@@ -50,7 +50,7 @@ public class RandomCard : MonoBehaviour
         var selected = cards[0];
         cards.Remove(selected);
         discards.Insert(discards.Count, selected);
-        Destroy(destroy, 1f);
+        //Destroy(destroy, 1f);
     }
 
     void Shuffle()
