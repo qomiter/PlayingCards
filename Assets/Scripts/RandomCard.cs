@@ -7,6 +7,8 @@ public class RandomCard : MonoBehaviour
 {
     //[SerializeField] Sprite[] suit;
     //[SerializeField] GameObject card;
+    [SerializeField] GameObject[] destroy;
+    [SerializeField] GameObject[] selected;
     [SerializeField] List<GameObject> cards = new List<GameObject>();
     [SerializeField] List<GameObject> shuffledList = new List<GameObject>();
     [SerializeField] List<GameObject> discards = new List<GameObject>();
@@ -31,7 +33,7 @@ public class RandomCard : MonoBehaviour
             {
                 PickCard();
                 Debug.Log("Card Drawn");
-            }else if (cards.Count <= 4)
+            }else if (cards.Count <= 5)
             {
                 discardToDraw();
             }
@@ -48,28 +50,14 @@ public class RandomCard : MonoBehaviour
     }
 
     void PickCard()
-    {
-        GameObject destroy = Instantiate(cards[0], transform.position, Quaternion.identity) ;
-        GameObject destroy1 = Instantiate(cards[1], transform.position + new Vector3(2,0,0) , Quaternion.identity);
-        GameObject destroy2 = Instantiate(cards[2], transform.position + new Vector3(4, 0, 0), Quaternion.identity);
-        GameObject destroy3 = Instantiate(cards[3], transform.position + new Vector3(6, 0, 0), Quaternion.identity);
-        GameObject destroy4 = Instantiate(cards[4], transform.position + new Vector3(8, 0, 0), Quaternion.identity);
-        var selected = cards[0];
-        var selected1 = cards[1];
-        var selected2 = cards[2];
-        var selected3 = cards[3];
-        var selected4 = cards[4];
-        cards.Remove(selected);
-        cards.Remove(selected1);
-        cards.Remove(selected2);
-        cards.Remove(selected3);
-        cards.Remove(selected4);
-        discards.Insert(discards.Count, selected);
-        discards.Insert(discards.Count, selected1);
-        discards.Insert(discards.Count, selected2);
-        discards.Insert(discards.Count, selected3);
-        discards.Insert(discards.Count, selected4);
-        //Destroy(destroy, 1f);
+    { 
+        for (int i = 0; i <= 4; i++)
+        {
+            destroy[i] = Instantiate(cards[i], transform.position + new Vector3(i*2,0,0), Quaternion.identity);
+            selected[i] = cards[i];
+            cards.Remove(selected[i]);
+            discards.Insert(0, selected[i]);
+        }
     }
 
     void Shuffle()
