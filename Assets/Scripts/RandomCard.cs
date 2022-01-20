@@ -10,7 +10,6 @@ public class RandomCard : MonoBehaviour
     [SerializeField] List<GameObject> cards = new List<GameObject>();
     [SerializeField] List<GameObject> shuffledList = new List<GameObject>();
     [SerializeField] List<GameObject> discards = new List<GameObject>();
-    [SerializeField] List<GameObject> emptyList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -51,7 +50,6 @@ public class RandomCard : MonoBehaviour
         var selected = cards[0];
         cards.Remove(selected);
         discards.Insert(discards.Count, selected);
-        //card.GetComponent<SpriteRenderer>().sprite = suit[Random.Range(0, suit.Length)];
         Destroy(destroy, 1f);
     }
 
