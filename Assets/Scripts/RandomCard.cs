@@ -31,6 +31,9 @@ public class RandomCard : MonoBehaviour
             {
                 PickCard();
                 Debug.Log("Card Drawn");
+            }else if (cards.Count <= 4)
+            {
+                discardToDraw();
             }
             else 
             {
