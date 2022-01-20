@@ -57,6 +57,7 @@ public class RandomCard : MonoBehaviour
             selected[i] = cards[i];
             cards.Remove(selected[i]);
             discards.Insert(0, selected[i]);
+            Destroy(destroy[i], 10f);
         }
     }
 
